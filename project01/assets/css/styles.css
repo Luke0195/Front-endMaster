@@ -7,7 +7,7 @@
   margin:0;
   outline: 0;
   box-sizing: border-box;
-  font-family: 'Roboto','Courier New', Courier, monospace;
+  font-family: 'Roboto', sans-serif;
 }
 
 html, body{
@@ -197,13 +197,21 @@ header .line{
 
 .area1-content a{
   text-decoration: none;
-  border: 1px solid #999;
   font-size: 18px;
   line-height: 28px; 
-  background:#ccc;
-  color:#000;
-  padding: 10px;
+  padding:  10px 32px;
+  color:#fff;
+  border-radius: 4px;
   font-weight: 700;
+  background: #134e5e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #134e5e, #71b280); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #134e5e, #71b280); 
+  font-family: 'Oswald';
+}
+
+
+.area1-content a:hover{
+  opacity: 0.9;
 }
 
 .area1-img1{
@@ -270,13 +278,16 @@ header .line{
 
 .area2-content a{
   text-decoration: none;
-  border: 1px solid #999;
   font-size: 18px;
   line-height: 28px; 
-  background:#ccc;
-  color:#000;
-  padding: 10px;
+  padding:  10px 32px;
+  color:#fff;
+  border-radius: 4px;
   font-weight: 700;
+  background: #134e5e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #134e5e, #71b280); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #134e5e, #71b280); 
+  font-family: 'Oswald';
 }
 
 .area2-img1{
@@ -294,4 +305,146 @@ header .line{
   background-size: cover;
   background-position: center;
   height: 350px;
+}
+
+.area3{
+  width:100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+
+.area3-content{
+  grid-column: 1/2;
+  grid-row: 1/-1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 350px 50px;
+  background: url('../img/bg2.jpg');
+  background-size:cover;
+  text-align: center;
+}
+
+.area3-content h1{
+ font-size: 40px;
+ line-height:50px;
+ font-family: 'Oswald','Courier New', Courier, monospace;
+}
+
+.area3-content p{
+  margin: 40px 0;
+  font-size: 16px;
+  line-height: 26px;
+
+}
+
+.area3-content a{
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 28px; 
+  padding:  10px 32px;
+  color:#fff;
+  border-radius: 4px;
+  font-weight: 700;
+  background: #134e5e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #134e5e, #71b280); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #134e5e, #71b280); 
+  font-family: 'Oswald';
+
+}
+
+.area3-img{
+  grid-column: 2/3;
+  grid-row: 1/-1;
+  background: url(../img/f5.jpg);
+  background-size:cover;
+  background-position: center;
+}
+
+.area4{
+  display: grid;
+  grid-template-columns: 500px 1fr; 
+}
+
+.area4-content{
+ padding: 80px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ text-align: center;
+
+}
+
+.area4-content .line{
+  width: 180px;
+  height: 30px;
+  background-color:var(--line-color);
+  margin: auto;
+}
+
+
+
+.area4-content .text{
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  text-align: center;
+  line-height: 25px;
+  
+}
+.area4-content .text h3{
+  width: 100%;
+  font-size: 35px;
+  line-height: 35px;
+  font-family: 'Oswald';
+  font-weight: bold;
+  display: block;
+  
+}
+
+.text p{
+  margin: 20px;
+  font-size: 18px;
+  line-height: 28px; 
+}
+
+.text .button{
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 28px; 
+  padding:  10px 32px;
+  color:#fff;
+  border-radius: 4px;
+  font-weight: 700;
+  background: #134e5e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #134e5e, #71b280); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #134e5e, #71b280); 
+  font-family: 'Oswald';
+}
+
+.area4-img{
+ background-image: url(../img/bg3.jpg);
+ background-size: cover;
+}
+
+
+.area5{
+  width: 100%;
+  background:url('../img/bg4.jpg');
+  height: 600px;
+  background-size:cover;
+}
+
+footer{
+  background:#333;
+  padding: 90px;
+}
+
+footer p{
+  color:#fff;
+  font-family: 'Oswald';
+  text-align: center;
+  font-size:20px;
 }
