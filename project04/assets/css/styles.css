@@ -5,6 +5,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Poppins';
+  scroll-behavior: smooth;
 }
 
 html {
@@ -13,8 +14,6 @@ html {
 
 body {
   font-size: 1.6rem;
-  min-height: 5000px;
-  scroll-behavior: smooth;
 }
 
 html, body {
@@ -79,7 +78,7 @@ header .navigation li a {
 }
 
 .sticky {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.7);
   padding: 10px 100px;
   -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
           box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
@@ -91,6 +90,10 @@ header .navigation li a {
 
 .sticky ul li a {
   color: #111;
+}
+
+.sticky ul li a:hover {
+  color: #ff0157;
 }
 
 .banner {
@@ -170,5 +173,64 @@ header .navigation li a {
 
 .banner .content .btn:hover {
   letter-spacing: 8px;
+}
+
+section {
+  padding: 100px;
+}
+
+section .row {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .row .col50 {
+  position: relative;
+  width: 40%;
+}
+
+section .titleText {
+  color: #111;
+  font-size: 3.2rem;
+  font-weight: 300;
+}
+
+section .titleText span {
+  color: #ff0157;
+  font-weight: bold;
+  font-size: 3.9rem;
+  padding-right: 3px;
+}
+
+section .row .col50 .img-box {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 1s ease-out;
+  transition: -webkit-transform 1s ease-out;
+  transition: transform 1s ease-out;
+  transition: transform 1s ease-out, -webkit-transform 1s ease-out;
+}
+
+section .row .col50 .img-box:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+section .row .col50 .img-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=styles.css.map */
