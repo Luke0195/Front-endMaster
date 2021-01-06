@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+}
+
+p {
+  font-weight: 300;
+  color: #111;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 999999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+header .logo {
+  color: #fff;
+  font-weight: 700;
+  font-size: 3.2rem;
+  text-decoration: none;
+}
+
+header .logo span {
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: #ff0157;
+}
+
+header .navigation {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+header header .navigation li {
+  list-style: none;
+}
+
+header .navigation li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+  margin: 0 20px;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.banner .content {
+  width: 100%;
+  max-width: 900px;
+}
+
+.banner .content h2 {
+  font-size: 50px;
+  color: #fff;
+}
+
+.banner .content p {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.banner .content .btn {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #fff;
+  background: #ff0157;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.banner .content .btn:hover {
+  letter-spacing: 8px;
+}
+/*# sourceMappingURL=styles.css.map */

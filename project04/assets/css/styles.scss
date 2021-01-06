@@ -1,0 +1,118 @@
+*{
+  padding:0;
+  margin:0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 1.6rem;
+  scroll-behavior: smooth;
+}
+
+html, body{
+  height: 100%;
+}
+
+p{
+  font-weight: 300;
+  color:#111;
+}
+
+
+header{
+ position:fixed;
+ top:0;
+ left:0;
+ width: 100%;
+ padding: 40px 100px;
+ z-index: 999999;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ transition:  0.8s;
+
+ .logo{
+   color:#fff;
+   font-weight: 700;
+   font-size: 3.2rem;
+   text-decoration: none;
+ }
+ .logo span{
+   font-size: 3.2rem;
+   font-weight: bold;
+   color:#ff0157;
+ }
+
+ .navigation{
+   position:relative;
+   display: flex;
+   list-style: none;
+   
+ }
+
+ header .navigation li{
+   list-style: none;
+ 
+ }
+
+ .navigation li a{
+   text-decoration: none;
+   color:#fff;
+   font-weight: 300;
+   margin: 0 20px;
+ }
+ 
+}
+
+.banner{
+  position:relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .content{
+    width: 100%;
+    max-width: 900px;
+  }
+
+  .content  h2{
+    font-size:50px;
+    color:#fff;
+  }
+
+  .content p{
+    font-size: 1.6rem;
+    color:#fff;
+  }
+
+  .content .btn{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color:#fff;
+    background: #ff0157;
+    display: inline-block;
+    margin-top:20px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition:  1s; 
+  }
+
+  .content .btn:hover{
+    letter-spacing: 8px;
+  }
+}
+
+
