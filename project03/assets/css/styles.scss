@@ -15,6 +15,10 @@ html, body, #container{
  height: 100%;
 }
 
+#container{
+  position:relative;
+}
+
 body{
   overflow: hidden;
 }
@@ -135,4 +139,19 @@ header{
     }
 
   }
+}
+
+.navigation{
+  width: 0;
+  position:fixed;
+  z-index: 99999;
+  top: 0;
+  right:0;
+  height: 100%;
+  background: #ccc;
+}
+
+.active{
+  transition:width 2s ease-out;
+  width: 250px;
 }

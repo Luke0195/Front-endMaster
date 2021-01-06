@@ -7,19 +7,29 @@
   <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png" />
-  <link rel="manifest" href="/site.webmanifest" />
+
   <title>Portfólio</title>
 </head>
 <body>
   <div id="container">  
    
-    <div class="hamburger"> 
+    <div class="hamburger close" onclick="toggleMenu()" > 
       <div class="line"></div>
       <div class="line"></div>
       <div class="line"></div>
     </div><!--hamburger-->
-
-    <header>
+    <div class="navigation">
+    
+      <nav>
+        <ul>
+          <li>
+            <a href="#home" > Home </a>
+          </li>
+        </ul>
+      </nav>
+      
+    </div><!--navigation-->
+    <header id="home">
       <div class="img-wrapper">
         <img  src="./assets/img/bg.jpg"/>
       </div><!--img-wraper-->
@@ -40,5 +50,6 @@
 
 
   </div><!--container-->
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
