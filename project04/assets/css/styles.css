@@ -624,4 +624,61 @@ section .row .col50 .img-box img {
   color: #ff0157;
   font-weight: 600;
 }
+
+.contact {
+  background: url("../images/bg3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.contact .contactForm {
+  padding: 75px 50px;
+  background: #fff;
+  -webkit-box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin-top: 50px;
+}
+
+.contact .contactForm h3 {
+  color: #111;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.contact .contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contact .contactForm .inputBox input,
+.contact .contactForm .inputBox textarea {
+  width: 100%;
+  border: 1px solid #555;
+  padding: 10px;
+  color: #111;
+  outline: 0;
+  font-size: 16px;
+  font-weight: 300;
+  resize: none;
+}
+
+.contact .contactForm .inputBox input[type="submit"] {
+  font-size: 1.6rem;
+  color: #fff;
+  background: #ff0157;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.8s ease-out;
+  transition: background 0.8s ease-out;
+}
+
+.contact .contactForm .inputBox input[type="submit"]:hover {
+  background: #d80048;
+}
 /*# sourceMappingURL=styles.css.map */
