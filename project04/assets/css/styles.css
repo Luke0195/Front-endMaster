@@ -349,4 +349,116 @@ section .row .col50 .img-box img {
 .menu .btn:hover {
   letter-spacing: 8px;
 }
+
+.expert .title {
+  text-align: center;
+}
+
+.expert .titleText {
+  color: #111;
+  font-size: 3.2rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.expert .titleText span {
+  color: #ff0157;
+  font-weight: bold;
+  font-size: 3.9rem;
+  padding-right: 3px;
+}
+
+.expert .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-top: 40px;
+}
+
+.expert .content .box {
+  width: 100%;
+  max-width: 250px;
+  margin: 15px;
+  -webkit-box-shadow: 15px 5px 34px rgba(0, 0, 0, 0.4);
+          box-shadow: 15px 5px 34px rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 8px;
+  -webkit-animation: moveLeft 4s ease-out;
+          animation: moveLeft 4s ease-out;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.8s ease-out;
+  transition: -webkit-transform 0.8s ease-out;
+  transition: transform 0.8s ease-out;
+  transition: transform 0.8s ease-out, -webkit-transform 0.8s ease-out;
+}
+
+.expert .content .box:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@-webkit-keyframes moveLeft {
+  0% {
+    -webkit-transform: translateX(-600px);
+            transform: translateX(-600px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+    -webkit-transform: translateX(-600px);
+            transform: translateX(-600px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.expert .content .box .imgBox {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.expert .content .box .imgBox img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.expert .content .box .text {
+  padding: 15px 0 5px;
+}
+
+.expert .content .box .text h3 {
+  color: #111;
+  font-weight: 300;
+}
 /*# sourceMappingURL=styles.css.map */
