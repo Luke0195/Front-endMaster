@@ -7,6 +7,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Poppins',Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
 html, body, #container {
@@ -19,22 +20,22 @@ html, body, #container {
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .menu {
   width: 50px;
   height: 50px;
-  background: red;
   position: fixed;
   top: 50px;
   right: 100px;
-  z-index: 999;
+  z-index: 10;
   background: url(../img/menu.png);
   background-size: 30px;
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
+  z-index: 100;
 }
 
 .menu.active {
@@ -45,12 +46,44 @@ body {
   position: fixed;
   top: 30px;
   right: 240px;
-  z-index: 99999;
+  z-index: 100;
   -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
+  z-index: 898988989898999;
+}
+
+.arrow {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background: #8E2DE2;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#4A00E0), to(#8E2DE2));
+  background: linear-gradient(to right, #4A00E0, #8E2DE2);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: fixed;
+  bottom: 20px;
+  left: 100px;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 4px;
+}
+
+.arrow i {
+  color: #fff;
 }
 
 .aside {
+  z-index: 8028948298498294;
   visibility: hidden;
   width: 0;
   position: fixed;
@@ -87,6 +120,7 @@ body {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  z-index: 9999999999999;
 }
 
 .aside.active ul {
@@ -295,5 +329,134 @@ header .header-content a {
 
 header .header-content a:hover {
   opacity: 0.7;
+}
+
+.conhecimento {
+  padding: 100px;
+  width: 100%;
+}
+
+.conhecimento .section-title {
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.conhecimento .section-title h3 {
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.conhecimento .section-title .line {
+  width: 100%;
+  max-width: 250px;
+  height: 8px;
+  background: #3f52c0;
+  border-radius: 4px;
+}
+
+.conhecimento .grid-area {
+  margin: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(../img/conhecimentos.png);
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: center;
+}
+
+.conhecimento .grid-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.conhecimento .grid-item p {
+  font-size: 13px;
+}
+
+.conhecimento .grid-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.conhecimento .grid-title i {
+  font-size: 40px;
+}
+
+.conhecimento .grid-title strong {
+  font-size: 25px;
+  font-weight: 300;
+  margin-left: 20px;
+}
+
+.conhecimento .item1 i {
+  color: #e03409;
+}
+
+.conhecimento .item2 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  grid-row: 3/6;
+}
+
+.conhecimento .item2 i {
+  color: blue;
+}
+
+.conhecimento .item3 i {
+  color: #d1d118;
+}
+
+.conhecimento .item4 i {
+  color: red;
+}
+
+.conhecimento .item5 i {
+  color: blue;
+}
+
+.conhecimento .item6 i {
+  color: black;
 }
 /*# sourceMappingURL=styles.css.map */
