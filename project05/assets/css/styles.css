@@ -7,6 +7,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Poppins','Courier New', Courier, monospace;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -21,7 +22,7 @@ body {
   font-size: 1.6rem;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 button {
@@ -54,8 +55,8 @@ button {
   right: 0;
   background: #101010;
   z-index: 2;
-  -webkit-transition: all 2s ease-out;
-  transition: all 2s ease-out;
+  -webkit-transition: all 0.8 ease-out;
+  transition: all 0.8 ease-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,6 +87,8 @@ button {
 }
 
 .menu-opened.active {
+  -webkit-transition: all  2s ease-out;
+  transition: all  2s ease-out;
   width: calc(100% - 450px);
   visibility: visible;
 }
@@ -130,7 +133,7 @@ button {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 80px;
+  padding: 8rem;
 }
 
 .banner .content h5 {
@@ -145,7 +148,7 @@ button {
 }
 
 .banner .content-text {
-  margin: 100px 0;
+  margin: 10rem 0;
   -webkit-animation: moveRight 2s  ease-out;
           animation: moveRight 2s  ease-out;
 }
@@ -236,6 +239,14 @@ button {
   padding: 5px 8px;
   border-radius: 8px;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .banner .icons i:hover {
@@ -255,5 +266,76 @@ button {
 .banner .icons .fa-instagram {
   color: #fff;
   background-color: #C13584;
+}
+
+.about {
+  background: #000;
+  color: #fff;
+  padding: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .about-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .about-title h3 {
+  font-size: 2.9rem;
+  line-height: 3.9rem;
+}
+
+.about .about-title .line {
+  margin: 1.5rem;
+  width: 100%;
+  height: 0.4rem;
+  background: #fff;
+  border-radius: 2px;
+}
+
+.about .about-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 50px;
+}
+
+.about .about-quote {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.about .about-content .img-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.about .img-wrapper img {
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=styles.css.map */
