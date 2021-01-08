@@ -13,22 +13,25 @@
 <body>
   <div id="container">  
    
-    <div class="hamburger close" onclick="toggleMenu()" > 
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </div><!--hamburger-->
-    <div class="navigation">
-    
+    <div class="menu" onclick="menuToggle()"></div><!--menu-->
+  
+    <div class="aside">
       <nav>
         <ul>
-          <li>
-            <a href="#home" > Home </a>
+          <li> 
+            <a href="#" target="_blank"> Home </a>
+            <a href="#" target="_blank"> Conhecimentos </a>
+            <a href="#" target="_blank"> About</a>
+            <a href="#" target="_blank"> Contact</a>
           </li>
         </ul>
       </nav>
-      
-    </div><!--navigation-->
+      <div class="icons">
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-github"></i>
+        <i class="fab fa-twitter"></i>
+      </div><!--icons-->
+    </div><!--aside-->
     <header id="home">
       <div class="img-wrapper">
         <img  src="./assets/img/bg.jpg"/>

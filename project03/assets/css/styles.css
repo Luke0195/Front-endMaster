@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Muli:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css");
 * {
   padding: 0;
@@ -6,6 +6,7 @@
   outline: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Poppins',Arial, Helvetica, sans-serif;
 }
 
 html, body, #container {
@@ -13,6 +14,7 @@ html, body, #container {
 }
 
 #container {
+  height: 100vh;
   position: relative;
 }
 
@@ -20,14 +22,44 @@ body {
   overflow: hidden;
 }
 
-.hamburger {
-  width: 30px;
-  height: 30px;
-  position: absolute;
+.menu {
+  width: 50px;
+  height: 50px;
+  background: red;
+  position: fixed;
+  top: 50px;
+  right: 100px;
   z-index: 999;
-  top: 40px;
-  right: 80px;
+  background: url(../img/menu.png);
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
   cursor: pointer;
+}
+
+.menu.active {
+  background: url("../img/close.png");
+  background-size: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 30px;
+  right: 240px;
+  z-index: 99999;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.aside {
+  visibility: hidden;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  height: 100%;
+  -webkit-transition: width 0.8s ease-in;
+  transition: width 0.8s ease-in;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,21 +67,108 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(255, 255, 255, 0.5);
 }
 
-.hamburger .line {
+.aside.active {
   width: 100%;
-  height: 1px;
-  background: #fff;
+  max-width: 300px;
+  height: 100%;
+  visibility: visible;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.aside.active ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.aside.active ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.aside.active ul li a {
+  text-decoration: none;
+  color: #0a0a0a;
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.aside.active ul li a:hover {
+  color: #1830bb;
+}
+
+.aside.active .icons {
+  width: 100%;
+  max-width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.aside.active .icons i {
+  font-size: 25px;
+  line-height: 35px;
+  cursor: pointer;
+}
+
+.aside.active .icons i:hover {
+  opacity: 0.8;
+}
+
+.aside.active .icons .fa-linkedin {
+  color: #0072b1;
+}
+
+.aside.active .icons .fa-twitter {
+  color: #00acee;
 }
 
 header {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   position: relative;
 }
@@ -63,8 +182,8 @@ header .img-wrapper {
 
 @-webkit-keyframes zoom {
   0% {
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   100% {
     -webkit-transform: scale(1);
@@ -74,8 +193,8 @@ header .img-wrapper {
 
 @keyframes zoom {
   0% {
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   100% {
     -webkit-transform: scale(1);
@@ -93,7 +212,7 @@ header .header-content {
   top: 30%;
   left: 15%;
   width: 100%;
-  max-width: 380px;
+  max-width: 400px;
   text-align: center;
   -webkit-animation: moveDown 5s ease-out;
           animation: moveDown 5s ease-out;
@@ -101,8 +220,8 @@ header .header-content {
 
 @-webkit-keyframes moveDown {
   0% {
-    -webkit-transform: translateX(-330px);
-            transform: translateX(-330px);
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
     opacity: 0;
   }
   50% {
@@ -116,8 +235,8 @@ header .header-content {
 
 @keyframes moveDown {
   0% {
-    -webkit-transform: translateX(-330px);
-            transform: translateX(-330px);
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
     opacity: 0;
   }
   50% {
@@ -132,7 +251,8 @@ header .header-content {
 header .header-content h1 {
   font-size: 38px;
   line-height: 48px;
-  font-family: "Baloo Da 2";
+  width: 100%;
+  max-width: 400px;
   font-weight: normal;
   color: #fff;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
@@ -142,7 +262,6 @@ header .header-content p {
   margin: 10px 0;
   font-size: 23px;
   line-height: 33px;
-  font-family: "Josefin Slab";
   color: #fff;
   font-weight: 400;
 }
@@ -169,7 +288,6 @@ header .header-content a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: "Baloo Da 2";
   border-radius: 4px;
   -webkit-transition: all 2s ease-out;
   transition: all 2s ease-out;
@@ -177,21 +295,5 @@ header .header-content a {
 
 header .header-content a:hover {
   opacity: 0.7;
-}
-
-.navigation {
-  width: 0;
-  position: fixed;
-  z-index: 99999;
-  top: 0;
-  right: 0;
-  height: 100%;
-  background: #ccc;
-}
-
-.active {
-  -webkit-transition: width 2s ease-out;
-  transition: width 2s ease-out;
-  width: 250px;
 }
 /*# sourceMappingURL=styles.css.map */

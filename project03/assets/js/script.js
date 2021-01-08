@@ -1,9 +1,7 @@
-function  toggleMenu(){
-  const navigation = document.querySelector('.navigation');
-  if(navigation.classList.contains('active') == true){
-    navigation.classList.remove('active');
-  }else{
-    navigation.classList.add('active');
-  }
+function menuToggle(){
+  const menuHamburger = document.querySelector('.menu');
+  const asideMenu = document.querySelector('.aside')
+   menuHamburger.classList.toggle('active');
+   asideMenu.classList.toggle('active')
+   
 }
-

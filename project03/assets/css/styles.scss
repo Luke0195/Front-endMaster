@@ -1,14 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Muli:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css");
 
-$primary-font: 'Baloo Da 2';
-$secunday-font: 'Josefin Slab';
+
 *{
   padding:0;
   margin:0;
   outline: 0;
   box-sizing: border-box;
+  font-family: 'Poppins',Arial, Helvetica, sans-serif;
 }
 
 html, body, #container{
@@ -16,6 +15,7 @@ html, body, #container{
 }
 
 #container{
+  height: 100vh;
   position:relative;
 }
 
@@ -23,31 +23,130 @@ body{
   overflow: hidden;
 }
 
-
-.hamburger{
-  width: 30px;
-  height: 30px;
-  position: absolute;
+.menu{
+  width: 50px;
+  height: 50px;
+  background:red;
+  position:fixed;
+  top: 50px;
+  right: 100px;
   z-index: 999;
-  top: 40px;
-  right: 80px;
+  background: url(../img/menu.png);
+  background-size:30px;
+  background-position: center;
+  background-repeat: no-repeat;
   cursor: pointer;
+}
+
+.menu.active{
+  background: url('../img/close.png');
+  background-size:25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position:fixed;
+  top: 30px;
+  right: 240px;
+  z-index: 99999;
+  transition: all 0.5s ease-in;
+
+  
+ 
+}
+
+.aside{
+  visibility: hidden;
+  width:0;
+  position:fixed;
+  top:0;
+  right: 0;
+  z-index: 1;
+  height: 100%;
+
+  transition: width 0.8s ease-in;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255, 0.5);
 
-  .line{
-    width: 100%;
-    height: 1px;
-    background:#fff;
+  
+}
+
+.aside.active{
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  visibility: visible;
+  display: flex;
+  align-items: stretch;
+ 
+ 
+  
+  ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    align-content: center;
   }
+
+  ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin:10px 0;
+    text-align: center;
+  }
+
+  ul li a{
+    text-decoration: none;
+    color:rgb(10, 10, 10);
+    margin:10px 0;
+    font-size: 20px;
+
+    &:hover{
+      color:#1830bb;
+    }
+  }
+  
+  .icons{
+    
+    width:100%;
+    max-width: 200px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    i{
+      font-size: 25px;
+      line-height: 35px;
+      cursor: pointer;
+      &:hover{
+        opacity: 0.8;
+      }
+    }
+
+    .fa-linkedin{
+      color:#0072b1;
+    }
+    
+    .fa-twitter{
+      color:#00acee;
+    }
+    
+  }
+
 }
 
 header{
-  width: 100%;
+  width: 100vw;
   height: 100%;
   position: relative;
+
 
   .img-wrapper{
     width: 100vw;
@@ -57,7 +156,7 @@ header{
 
   @keyframes zoom{
     0%{
-      transform: scale(1.3);
+      transform: scale(1.2);
     }
 
    
@@ -76,12 +175,12 @@ header{
     top: 30%;
     left: 15%;
     width: 100%;
-    max-width:380px;
+    max-width:400px;
     text-align: center;
     animation: moveDown 5s ease-out;
     @keyframes moveDown{
       0%{
-        transform: translateX(-330px);
+        transform: translateX(-100px);
         opacity: 0;
       }
 
@@ -100,7 +199,8 @@ header{
     h1{
       font-size: 38px;
       line-height: 48px;
-      font-family:$primary-font;
+      width: 100%;
+      max-width: 400px;
       font-weight:normal;
       color:#fff;
       text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
@@ -110,7 +210,6 @@ header{
        margin: 10px 0;
        font-size:23px;
        line-height: 33px;
-       font-family: $secunday-font;
        color: #fff;
        font-weight:400;
     }
@@ -129,7 +228,6 @@ header{
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: $primary-font;
       border-radius: 4px;
       transition: all 2s ease-out;
       
@@ -141,17 +239,3 @@ header{
   }
 }
 
-.navigation{
-  width: 0;
-  position:fixed;
-  z-index: 99999;
-  top: 0;
-  right:0;
-  height: 100%;
-  background: #ccc;
-}
-
-.active{
-  transition:width 2s ease-out;
-  width: 250px;
-}

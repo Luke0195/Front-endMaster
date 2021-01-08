@@ -8,12 +8,16 @@
   font-family: 'Poppins','Courier New', Courier, monospace;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 html, body {
   height: 100%;
 }
 
 body {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .toggle {
@@ -27,6 +31,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
+  z-index: 1000;
 }
 
 .toggle.active {
@@ -34,5 +39,161 @@ body {
   background-repeat: no-repeat;
   background-size: 25px;
   background-position: center;
+}
+
+section {
+  padding: 100px;
+  height: 100vh;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+}
+
+.banner .imgSlider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 100%;
+  background: url(../images/bg.jpg);
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.banner .banner .content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(100% - 500px);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner .content h5 {
+  position: absolute;
+  top: 40px;
+  left: 100px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: #333;
+  color: #fff;
+  padding: 0 0.5rem;
+}
+
+.banner .content h4 {
+  font-size: 2.6rem;
+  color: #333;
+  font-weight: 300;
+}
+
+.banner .content h4 span {
+  color: #00bcd4;
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+
+.banner .content h2 {
+  font-size: 3.8rem;
+  line-height: 4.8rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.banner .content p {
+  font-size: 1.7rem;
+  margin: 20px 0;
+  font-weight: 300;
+}
+
+.banner .content .btn {
+  background: #2193b0;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#2193b0), to(#6dd5ed));
+  background: linear-gradient(to right, #2193b0, #6dd5ed);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  padding: 10px 30px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 5px;
+  -webkit-transition: letter-spacing 0.5s ease-out;
+  transition: letter-spacing 0.5s ease-out;
+}
+
+.banner .content .btn:hover {
+  letter-spacing: 3px;
+}
+
+.sidebar {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition: 2s;
+  transition: 2s;
+  padding: 40px;
+  z-index: 100;
+}
+
+.sidebar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sidebar li {
+  list-style: none;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #fff;
+  margin: 10px 0;
+  font-size: 2rem;
+  -webkit-transition: color 0.8s ease-out;
+  transition: color 0.8s ease-out;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.sidebar a:hover {
+  color: #00bcd4;
+}
+
+.sidebar.active {
+  right: 0;
 }
 /*# sourceMappingURL=styles.css.map */
