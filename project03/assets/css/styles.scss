@@ -107,7 +107,7 @@ body{
   visibility: visible;
   display: flex;
   align-items: stretch;
-  z-index: 9999999999999;
+  z-index: 2;
  
  
   
@@ -302,12 +302,13 @@ header{
     margin: 80px 0;
     display: flex;
     justify-content: space-between;
-    flex-wrap:wrap;
+    flex-wrap:row wrap;
     align-items: center;
     background: url(../img/conhecimentos.png);
     background-repeat: no-repeat;
     background-size: 300px;
     background-position: center;
+
   
   }
 
