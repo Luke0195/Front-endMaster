@@ -545,8 +545,8 @@ button {
           justify-content: center;
   font-weight: bold;
   color: #fff;
-  -webkit-transition: all 0.1s ease-out;
-  transition: all 0.1s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
   visibility: hidden;
   padding: 0;
 }
@@ -554,5 +554,163 @@ button {
 .works .photo:hover .photo-text {
   top: 0;
   visibility: visible;
+}
+
+footer {
+  width: 100%;
+  padding: 10rem 10rem 1rem 10rem;
+  background: #0c0c0c;
+  overflow: hidden;
+}
+
+footer .service-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+footer .service-title h3 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+footer .service-title .line {
+  width: 100px;
+  height: 4px;
+  background: #fff;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+footer .service-title p {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: #fff;
+}
+
+footer form {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer form .input {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #fff;
+}
+
+footer form .input + .input {
+  margin: 20px 0;
+}
+
+footer .input input {
+  background: #4e4e4e;
+  color: #fff;
+  padding: 0 8px;
+  border: 0;
+}
+
+footer .input input::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+footer .input input:-ms-input-placeholder {
+  color: #ccc;
+}
+
+footer .input input::-ms-input-placeholder {
+  color: #ccc;
+}
+
+footer .input input::placeholder {
+  color: #ccc;
+}
+
+footer .input-text {
+  width: 100%;
+  max-width: 565px;
+  margin: auto;
+  color: #ececec;
+}
+
+footer .input-text textarea {
+  width: 100%;
+  height: 10rem;
+  background: #4e4e4e;
+  padding: 2px 8px;
+  border: 0;
+  color: #ececec;
+}
+
+footer .input-text textarea::-webkit-input-placeholder {
+  color: #ececec;
+}
+
+footer .input-text textarea:-ms-input-placeholder {
+  color: #ececec;
+}
+
+footer .input-text textarea::-ms-input-placeholder {
+  color: #ececec;
+}
+
+footer .input-text textarea::placeholder {
+  color: #ececec;
+}
+
+footer button {
+  width: 100%;
+  max-width: 25rem;
+  margin: 40px auto;
+  height: 50px;
+  background: #2193b0;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#2193b0), to(#6dd5ed));
+  background: linear-gradient(to right, #2193b0, #6dd5ed);
+  color: #fff;
+  border: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-transition: letter-spacing 0.8s ease-out;
+  transition: letter-spacing 0.8s ease-out;
+}
+
+footer button:hover {
+  letter-spacing: 4px;
+  border-radius: 4px;
+}
+
+footer > p {
+  margin-top: 120px;
+  text-align: center;
+  color: #fff;
 }
 /*# sourceMappingURL=styles.css.map */
