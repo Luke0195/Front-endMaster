@@ -606,7 +606,8 @@ footer .service-title p {
 footer form {
   width: 100%;
   max-width: 600px;
-  margin: 20px auto;
+  margin: auto;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -614,79 +615,66 @@ footer form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
 }
 
-footer form .input {
-  height: 40px;
+footer .input {
+  margin: 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  color: #fff;
-}
-
-footer form .input + .input {
-  margin: 20px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer .input input {
-  background: #4e4e4e;
-  color: #fff;
-  padding: 0 8px;
+  height: 4rem;
+  background: #4d4848;
   border: 0;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  margin: 0 1rem;
+  padding-left: 8px;
+  border: 1px solid #4d4848;
 }
 
 footer .input input::-webkit-input-placeholder {
-  color: #ccc;
+  color: #dbdbdb;
 }
 
 footer .input input:-ms-input-placeholder {
-  color: #ccc;
+  color: #dbdbdb;
 }
 
 footer .input input::-ms-input-placeholder {
-  color: #ccc;
+  color: #dbdbdb;
 }
 
 footer .input input::placeholder {
-  color: #ccc;
+  color: #dbdbdb;
 }
 
-footer .input-text {
-  width: 100%;
-  max-width: 565px;
-  margin: auto;
-  color: #ececec;
+footer .input input + input {
+  margin-top: 1rem;
 }
 
 footer .input-text textarea {
   width: 100%;
-  height: 10rem;
-  background: #4e4e4e;
-  padding: 2px 8px;
-  border: 0;
-  color: #ececec;
-}
-
-footer .input-text textarea::-webkit-input-placeholder {
-  color: #ececec;
-}
-
-footer .input-text textarea:-ms-input-placeholder {
-  color: #ececec;
-}
-
-footer .input-text textarea::-ms-input-placeholder {
-  color: #ececec;
-}
-
-footer .input-text textarea::placeholder {
-  color: #ececec;
+  max-width: 300px;
+  height: 200px;
+  background: #4d4848;
+  color: #fff;
 }
 
 footer button {
@@ -718,6 +706,30 @@ footer > p {
   color: #fff;
 }
 
+@media (max-width: 1230px) {
+  .about .about-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .about .about-content .img-wrapper {
+    width: 520px;
+    height: 300px;
+    margin: 2rem 0;
+  }
+}
+
 @media (max-width: 1090px) {
   .banner .user-photo {
     display: none;
@@ -743,6 +755,9 @@ footer > p {
 
 @media (max-width: 740px) {
   .banner .content-text p {
+    font-size: 1.5rem;
+  }
+  .about .about-content p {
     font-size: 1.5rem;
   }
 }
@@ -781,6 +796,36 @@ footer > p {
   }
   .banner .icons {
     bottom: 24px;
+  }
+  .about .about-content p {
+    font-size: 1.3rem;
+    text-align: justify;
+  }
+  .about .about-content .img-wrapper {
+    width: 350px;
+    height: 200px;
+  }
+  .about .about-content .img-wrapper img {
+    width: 100%;
+    height: 100%;
+  }
+  footer form {
+    width: 100%;
+    max-width: 400px;
+  }
+  footer form .input {
+    width: 100%;
+    max-width: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer form .input input {
+    margin-top: 40px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
