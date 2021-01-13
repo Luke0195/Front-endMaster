@@ -447,17 +447,13 @@ button{
     top:0;
     visibility: visible;
   }
-
-  
-
-  
 }
 
 footer{
   width: 100%;
   padding:10rem 10rem 1rem 10rem;
   background:rgb(12, 12, 12);
-  overflow: hidden;
+  overflow-x: hidden;
   .service-title {
     display: flex;
     flex-direction: column;
@@ -518,6 +514,8 @@ footer{
     color:#fff;
     padding: 0 8px;
     border:0;
+    flex:1;
+    margin: 0 1rem;
 
     &::placeholder{
       color:#ccc;
@@ -566,5 +564,71 @@ footer{
     margin-top:120px;
     text-align: center;
     color:#fff;
+  }
+}
+
+@media(max-width:1090px){
+  .banner{
+    .user-photo{
+      display: none;
+    }
+
+    .content-text{
+      width:100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+}
+
+@media(max-width:740px){
+
+  .banner{
+  .content-text{
+
+
+    p{
+      font-size: 1.5rem;
+    }
+  }
+}
+}
+
+@media(max-width:640px){
+  .banner{
+
+  .icons{
+    margin: auto;
+    position:relative;
+    bottom:50px;
+    margin: 1rem auto;
+  }
+  }
+}
+
+@media(max-width:601px){
+  .banner{
+    .content-text{
+      margin:15rem auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      
+      p{
+        display: none;
+      }
+
+      .btn{
+        margin:2rem 0;
+      }
+    }
+
+    .icons{
+      bottom:24px;
+    }
   }
 }
