@@ -619,6 +619,11 @@ footer{
     margin: 1rem auto;
   }
   }
+
+  .menu-opened{
+   
+    transition: width 0.8s ease-out;
+  }
 }
 
 @media(max-width:601px){
@@ -682,3 +687,4 @@ footer{
   }
 }
 }
+

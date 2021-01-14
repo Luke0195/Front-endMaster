@@ -769,6 +769,10 @@ footer > p {
     bottom: 50px;
     margin: 1rem auto;
   }
+  .menu-opened {
+    -webkit-transition: width 0.8s ease-out;
+    transition: width 0.8s ease-out;
+  }
 }
 
 @media (max-width: 601px) {
