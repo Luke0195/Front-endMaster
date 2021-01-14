@@ -1,0 +1,214 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins','Courier New', Courier, monospace;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.menu {
+  position: absolute;
+  z-index: 2;
+  width: 3rem;
+  height: 2rem;
+  top: 3.6rem;
+  right: 3rem;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.menu img {
+  width: 100%;
+  height: 100%;
+}
+
+.banner {
+  width: 100vw;
+  height: 100vh;
+  background: url(../images/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.banner .navigation {
+  padding: 3rem 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner .navigation h3 {
+  font-size: 2.5rem;
+  color: #fff;
+  letter-spacing: 0.2rem;
+}
+
+.banner .navigation nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.banner .navigation nav ul li {
+  margin: 0 1rem;
+}
+
+.banner .navigation ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.banner .content {
+  width: 100%;
+  max-width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 17rem 8rem;
+  color: #fff;
+  -webkit-animation: moveDown  2s ease-out;
+          animation: moveDown  2s ease-out;
+}
+
+.banner .content h3 {
+  font-size: 3.6rem;
+  line-height: 4.6rem;
+  font-weight: 500;
+}
+
+.banner .content h1 {
+  font-size: 5.8rem;
+  line-height: 6.8rem;
+}
+
+.banner .content p {
+  font-size: 2.3rem;
+  line-height: 3.3rem;
+  font-weight: 300;
+  margin-top: 1rem;
+}
+
+.banner .content .btn {
+  background: #005c97;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#005c97), to(#363795));
+  background: linear-gradient(to right, #005c97, #363795);
+  text-decoration: none;
+  color: #fff;
+  height: 5rem;
+  width: 18rem;
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-radius: 0.4rem;
+  text-transform: uppercase;
+  -webkit-transition: letter-spacing 0.4s ease-out;
+  transition: letter-spacing 0.4s ease-out;
+}
+
+.banner .content .btn:hover {
+  letter-spacing: 0.4rem;
+}
+
+@-webkit-keyframes moveDown {
+  0% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 850px) {
+  .menu {
+    visibility: visible;
+  }
+  .banner h3 {
+    margin-top: 0.8rem;
+  }
+  .banner nav {
+    display: none;
+  }
+  .banner .content {
+    width: 100%;
+    max-width: 600px;
+    margin: 15rem auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .banner .content h3 {
+    text-align: center;
+    font-size: 2.8rem;
+  }
+  .banner .content h1 {
+    font-size: 3.3rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
