@@ -258,11 +258,91 @@ header .content .btn:hover {
   height: 100%;
 }
 
+.services {
+  padding: 4rem 10rem;
+  background: #000;
+}
+
+.services .service-title {
+  margin-top: 4rem;
+  text-align: center;
+  color: #fff;
+}
+
+.services .service-title h1 {
+  font-size: 4rem;
+  line-height: 5rem;
+}
+
+.services .service-title p {
+  margin: 2rem 0;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+.services .services-imagens {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.services .services-imagens .service-item {
+  width: 100%;
+  max-width: 30rem;
+  background: rgba(136, 136, 136, 0.4);
+  padding: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5rem;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.services .services-imagens .service-item:hover {
+  background: rgba(3, 143, 207, 0.973);
+}
+
+.services .services-imagens .service-item strong {
+  margin: 2rem 0;
+  font-size: 1.7rem;
+}
+
+.services .services-imagens .service-item p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  text-align: justify;
+}
+
+.services .services-imagens .service-item img {
+  max-height: 80px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
 /* Responsividade */
 @media (max-width: 1080px) {
   .menu {
     display: block;
     position: fixed;
+    -webkit-filter: invert(1);
+            filter: invert(1);
   }
   .navigation ul {
     display: none;
@@ -354,6 +434,10 @@ header .content .btn:hover {
     top: 30px;
     -webkit-transition: all 0.8 ease-out;
     transition: all 0.8 ease-out;
+  }
+  .menu img {
+    -webkit-filter: invert(1);
+            filter: invert(1);
   }
 }
 /*# sourceMappingURL=styles.css.map */

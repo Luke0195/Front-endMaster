@@ -207,6 +207,67 @@ header{
   }
 }
 
+.services{
+  padding: 4rem 10rem;
+  background:#000;
+
+  .service-title{
+    margin-top:4rem;
+    text-align: center;
+    color:#fff;
+
+    h1{
+      font-size: 4rem;
+      line-height: 5rem;
+    }
+
+    p{
+      margin: 2rem 0;
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+    }
+  }
+
+  .services-imagens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .service-item{
+      width: 100%;
+      max-width: 30rem;
+      background:rgba(136, 136, 136, 0.4);
+      padding: 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 5rem;
+      color:#fff;
+      cursor: pointer;
+      border-radius: 4px;
+      &:hover{
+        background: rgba(3, 143, 207, 0.973);
+      }
+
+      strong{
+        margin: 2rem 0;
+        font-size: 1.7rem;
+      }
+
+      p{
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        text-align: justify;
+      }
+      img{
+        max-height: 80px;
+        filter: invert(1);
+      }
+      
+      
+    }
+  }
+}
 
 
 /* Responsividade */
@@ -216,6 +277,7 @@ header{
   .menu{
     display: block;
     position:fixed;
+    filter: invert(1)
   }
   .navigation{
     ul{
@@ -300,6 +362,9 @@ header{
   .menu{
    top: 30px;
    transition: all 0.8 ease-out;
+   img{
+     filter: invert(1);
+   }
 
   }
 }
