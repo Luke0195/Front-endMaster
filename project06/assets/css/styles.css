@@ -336,6 +336,94 @@ header .content .btn:hover {
           filter: invert(1);
 }
 
+.works {
+  width: 100%;
+  padding: 4rem 10rem;
+}
+
+.works .works-title {
+  width: 100%;
+  max-width: 50rem;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.works .works-title h2 {
+  font-size: 3.6rem;
+  line-height: 4.6rem;
+}
+
+.works .works-title p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.works .works-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.works .works-content .img-wrapper {
+  width: 400px;
+  height: 400px;
+  margin: 3rem;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.8s ease-out;
+  transition: -webkit-transform 0.8s ease-out;
+  transition: transform 0.8s ease-out;
+  transition: transform 0.8s ease-out, -webkit-transform 0.8s ease-out;
+}
+
+.works .works-content .img-wrapper:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.works .works-content .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.works > .btn {
+  display: block;
+  width: 18rem;
+  height: 5rem;
+  margin: 2rem auto;
+  text-align: center;
+  text-decoration: none;
+  background: #1782a0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  -webkit-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out;
+}
+
+.works > .btn:hover {
+  letter-spacing: 3px;
+  background: #156277;
+}
+
 /* Responsividade */
 @media (max-width: 1080px) {
   .menu {
