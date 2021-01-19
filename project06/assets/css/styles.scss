@@ -1,3 +1,4 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
 *{
   padding:0;
   margin: 0;
@@ -388,6 +389,128 @@ header{
       }
     }
   }
+}
+
+.contact{
+  padding: 4rem 10rem;
+  background:#000;
+
+  .contact-title{
+    color:#fff;
+    width: 100%;
+    max-width: 50rem;
+    margin: 2rem auto;
+    text-align: center;
+
+    h3{
+      font-size: 3.5rem;
+      line-height: 4.5rem;
+    }
+    
+    p{
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+    }
+  }
+
+  .content{
+    display: flex;
+  .left-content{
+    width: 100%;
+    max-width: 40rem;
+   text-align: center;
+    strong{
+      width: 100%;
+      text-align: center;
+      margin: 1rem 0;
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+      color:#fff;
+    }
+
+    .item{
+      margin: 2rem 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      i{
+        color:#fff;
+        margin: 1rem 0;
+      }
+
+      span{
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        font-weight: bold;
+        color:#1782a0;
+      }
+      p{
+        font-size: 1.4rem;
+        color:#fff;
+      }
+    }
+  }
+
+  .right-content{
+    margin-left: 3rem;
+    flex:1;
+    form{
+      display: flex;
+      flex-direction: column;
+
+      input{
+        margin:2rem 0;
+        height: 5rem;
+        background:rgb(82, 81, 81);
+        border: 0;
+        outline: 0;
+
+        &::placeholder{
+          color:#fff;
+          padding-left: 0.8rem;
+        }
+      }
+
+      textarea{
+        resize: none;
+        height: 20rem;
+        background: rgb(82, 81, 81);
+        padding: 0.8rem;
+        color:#fff;
+        border:0;
+
+        &::placeholder{
+          color:#fff;
+        }
+      }
+
+      .btn{
+        text-decoration: none;
+        color:rgb(252, 236, 236);
+        background:#0c7ce6;
+        margin-top: 20px;
+        width: 100%;
+        max-width: 18rem;
+        height: 5rem;
+        border-radius: 0.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: letter-spacing 0.8s ease-out;
+
+        &:hover{
+          letter-spacing: 4px;
+          background:#0a5dac;
+        }
+      }
+    }
+  }
+}
 }
 /* Responsividade */
 
