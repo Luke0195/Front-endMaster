@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins','Courier New', Courier, monospace;
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.header {
+  height: 100px;
+  background: #000;
+}
+
+.header .container {
+  height: 100%;
+  padding: 0 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .container .img-wrapper {
+  width: 8rem;
+  height: 8rem;
+}
+
+.header .container .img-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+.header .container .navigation {
+  height: 100%;
+}
+
+.header .container .navigation ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.header .container .navigation li {
+  margin: 0 0.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  border: 4px solid black;
+}
+
+.header .container .navigation li:hover {
+  border-bottom: 4px solid #fca572;
+  color: #dadada;
+}
+
+.header .container .navigation li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.header .container .navigation li a:hover {
+  color: #f0e3e3;
+}
+
+.header .container .menu-img-wrapper {
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.header .container .menu-img-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1175px) {
+  .header .container .navigation {
+    display: none;
+  }
+  .header .container .menu-img-wrapper {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */
