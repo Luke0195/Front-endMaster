@@ -418,6 +418,58 @@ body {
   height: inherit;
 }
 
+.reservations {
+  height: 420px;
+  background: url("../images/tasteful-recipes.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reservations .container {
+  padding: 60px 0;
+  width: 100%;
+  max-width: 500px;
+  margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reservations .container h2 {
+  margin-top: 40px;
+  font-family: 'Herr Von Muellerhoff';
+  font-size: 80px;
+  line-height: 60px;
+  color: #c59d5f;
+  font-weight: normal;
+}
+
+.reservations .container h3 {
+  font-size: 37px;
+  margin-top: 37px;
+  line-height: 40px;
+  font-family: 'Source Sans Pro','Courier New', Courier, monospace;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
 @media (max-width: 847px) {
   .header {
     padding: 20px 50px;
@@ -432,6 +484,16 @@ body {
   }
   .header .menu-hamburger {
     display: block;
+  }
+}
+
+@media (max-width: 873px) {
+  .menu .container {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=styles.css.map */
