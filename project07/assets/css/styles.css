@@ -470,6 +470,127 @@ body {
   letter-spacing: 8px;
 }
 
+.special-food {
+  width: 100%;
+  padding: 40px 100px;
+}
+
+.special-food .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+}
+
+.special-food .imagens {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.special-food .imagens .img-wrapper {
+  width: 270px;
+  height: 180px;
+  margin: 12px;
+  -webkit-transition: -webkit-transform 0.8s ease-out;
+  transition: -webkit-transform 0.8s ease-out;
+  transition: transform 0.8s ease-out;
+  transition: transform 0.8s ease-out, -webkit-transform 0.8s ease-out;
+  cursor: pointer;
+}
+
+.special-food .imagens .img-wrapper:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.special-food .imagens .img-wrapper img {
+  width: inherit;
+  height: inherit;
+  border-radius: 8px;
+}
+
+.special-food .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.special-food .content h2 {
+  font-size: 90px;
+  line-height: 100px;
+  font-family: 'Herr Von Muellerhoff';
+  color: #c59d5f;
+  font-weight: normal;
+}
+
+.special-food .content h2::first-letter {
+  text-transform: uppercase;
+}
+
+.special-food .content h3 {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro';
+  letter-spacing: 5px;
+}
+
+.special-food .content span {
+  margin: 8px 0;
+  font-size: 25px;
+  line-height: 35px;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
+.special-food .content .content-text {
+  text-align: center;
+  font-family: 'Source Sans Pro';
+}
+
+.special-food .content .content-text p {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.special-food .content .content-text a {
+  font-size: 18px;
+  line-height: 28px;
+  color: #c59d5f;
+}
+
+.special-food .content .content-text a::first-letter {
+  text-transform: uppercase;
+}
+
 .news {
   padding: 60px 100px;
   width: 100%;
