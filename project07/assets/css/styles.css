@@ -470,6 +470,107 @@ body {
   letter-spacing: 8px;
 }
 
+.news {
+  padding: 60px 100px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.news .container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.news .container .left-content {
+  width: 50%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.news .container .left-content h2 {
+  font-size: 90px;
+  line-height: 100px;
+  color: #c59d5f;
+  font-family: 'Herr Von Muellerhoff';
+  font-weight: normal;
+}
+
+.news .container .left-content h4 {
+  font-size: 29px;
+  line-height: 39px;
+  font-family: 'Source Sans Pro';
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+.news .container .left-content span {
+  margin: 8px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.news .container .left-content p {
+  font-size: 16px;
+  font-family: 'Source Sans Pro';
+  text-align: center;
+}
+
+.news .container .left-content a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #c59d5f;
+  font-family: 'Source Sans Pro';
+}
+
+.news .container .left-content a::first-letter {
+  text-transform: uppercase;
+}
+
+.news .container .right-content {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.news .container .right-content .img-wrapper {
+  width: 250px;
+  height: 400px;
+}
+
+.news .container .right-content .img-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+.news .container .right-content .img-wrapper + .img-wrapper {
+  margin-left: 10px;
+}
+
 @media (max-width: 847px) {
   .header {
     padding: 20px 50px;
