@@ -367,92 +367,95 @@ body{
   padding: 40px 100px;
 
   .container{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 30px;
-  }
 
+    
   .imagens{
     flex:1;
     display: flex;
     flex-wrap: wrap;
-
- 
-
+   
+    padding: 10px;
+  
     .img-wrapper{
-      width: 270px;
-      height: 180px;
-      margin: 12px;
-      transition: transform 0.8s ease-out;
+      width: 255px;
+      height: 200px;
+      margin: 10px;
       cursor: pointer;
-      &:hover{
-        transform: scale(1.1);
-      }
-
-      img{
+      transition: transform 0.8s ease-out;
+      
+      
+       img{
         width: inherit;
         height: inherit;
-        border-radius: 8px;
+        border-radius: 5px;
       }
+
+      &:hover{
+        transform: scale(1.1)
+      }
+
+    
     }
   }
 
+
   .content{
     flex:1;
-    padding-left: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
+    text-align: center;
+    
     h2{
       font-size: 90px;
-      line-height:100px;
-      font-family: 'Herr Von Muellerhoff';
-      color:#c59d5f;
+      line-height: 100px;
+      font-family:  'Herr Von Muellerhoff';
       font-weight: normal;
+      color:#c59d5f;
       &::first-letter{
         text-transform: uppercase;
       }
     }
-    
+
     h3{
-      font-weight: bold;
-      font-size: 30px;
-      line-height: 40px;
-      color:#1a1a1a;
+      font-size: 38px;
+      line-height:40px;
+      font-family: 'Source Sans Pro';
       text-transform: uppercase;
-      font-family: 'Source Sans Pro';
-      letter-spacing: 5px;
+      letter-spacing: 8px;
     }
-    
+
     span{
+      font-size: 20px;
+      line-height: 30px;
       margin: 8px 0;
-      font-size: 25px;
-      line-height: 35px;
-      color:#1a1a1a;
-      font-weight: bold;
     }
 
-    .content-text{
-      text-align: center;
+    p{
+      margin: 10px 0;
       font-family: 'Source Sans Pro';
-      p{
-        font-size: 15px;
-        line-height: 25px;
-      }
+      text-align: center;
+      font-size: 16px;
+      line-height: 26px;
+    }
 
-      a{
-         font-size: 18px;
-         line-height: 28px;   
-         color:#c59d5f;
-        &::first-letter{
-          text-transform: uppercase;
-        }
-      }
+    a{
+      color:#c59041;
+      font-family:  'Source Sans Pro';
+      font-size: 17px;
+      line-height: 27px;
     }
   }
+
+
+
+  }
+
+ 
+
+  
 }
 
 .news{
