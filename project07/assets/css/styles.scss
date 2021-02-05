@@ -458,6 +458,40 @@ body{
   
 }
 
+.blender-area{
+  padding: 40px 100px;
+  height:350px;
+  background: url(../images/perfect-blend.jpg);
+  background-size:cover;
+  background-position:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    text-align: center;
+
+    h2{
+      font-size: 100px;
+      line-height: 110px;
+      font-family: 'Herr Von Muellerhoff';
+      color:#c59041;
+      font-weight: normal;
+    }
+
+    h3{
+      font-size: 40px;
+      line-height: 50px;
+      color:#fff;
+      font-family: 'Source Sans Pro';
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-top: 8px;
+    }
+  }
+}
+
+
 .news{
   padding: 60px 100px;
   width: 100%;
