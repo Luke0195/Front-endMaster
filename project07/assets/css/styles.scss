@@ -575,6 +575,45 @@ body{
     }
   }
 }
+
+.footer{
+  padding: 40px 100px;
+  background:#1a1a1d;
+  position:relative;
+
+  .arrow{
+    color:#fff;
+      font-size:20px;
+      line-height: 28px;
+      font-family: 'Source Sans Pro';
+      background:#000;
+      width: 100%;
+      max-width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+      border-radius: 50%;
+      position:absolute;
+      top:-20px;
+      left: 50%;
+      transform: translateX(-50%);
+    
+  }
+  
+  h4{
+    margin-top: 40px;
+    font-size: 20px;
+    color:#fff;
+    text-align: center;
+    font-family: 'Source Sans Pro';
+  }
+
+  
+
+    
+  
+}
   @media(max-width: 847px){
     .header{
       padding: 20px 50px;
