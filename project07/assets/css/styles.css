@@ -74,11 +74,16 @@ body {
   height: 25px;
   cursor: pointer;
   display: none;
+  z-index: 5;
+  background: url(../images/menu.png);
+  background-size: cover;
+  background-position: center;
 }
 
-.header .menu-hamburger img {
-  width: inherit;
-  height: inherit;
+.header .change-icon {
+  background: url(../images/close.png);
+  background-size: cover;
+  background-position: center;
 }
 
 .banner {
@@ -327,6 +332,67 @@ body {
   opacity: 0.8;
 }
 
+.nav-content {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  width: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: width 1s ease-out;
+  transition: width 1s ease-out;
+}
+
+.nav-content ul {
+  width: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+}
+
+.nav-content ul li {
+  margin: 10px 0;
+}
+
+.nav-content ul a {
+  text-decoration: none;
+  font-family: 'Source Sans Pro';
+  font-size: 20px;
+  line-height: 35px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.nav-content ul a:hover {
+  color: #c59041;
+}
+
+.nav-content-active {
+  width: 230px;
+  visibility: visible;
+  right: 0;
+}
+
 .menu {
   width: 100%;
   padding: 60px 100px;
@@ -513,6 +579,8 @@ body {
 }
 
 .special-food .container .imagens .img-wrapper img {
+  -webkit-box-shadow: 1px 1px 10px gray;
+          box-shadow: 1px 1px 10px gray;
   width: inherit;
   height: inherit;
   border-radius: 5px;
@@ -801,6 +869,46 @@ body {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .special-food .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .special-food .content {
+    margin-top: 20px;
+  }
+  .special-food .content h2 {
+    font-size: 70px;
+    line-height: 80px;
+  }
+  .special-food .content h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .news .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .news .container .left-content {
+    width: 100%;
+    max-width: 500px;
+  }
+  .news .container .right-content {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 500px;
+  }
+  .news .container .right-content .img-wrapper {
+    width: inherit;
+    height: 300px;
+  }
+  .news .container .right-content .img-wrapper img {
+    width: inherit;
+    height: inherit;
+  }
 }
 
 @media (max-width: 873px) {
@@ -810,6 +918,35 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media (max-width: 743px) {
+  .special-food {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .special-food .imagens {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin: auto;
+  }
+  .special-food .imagens .img-wrapper {
+    width: 150px;
+    height: 150px;
+  }
+  .special-food .imagens img {
+    width: inherit;
+    height: inherit;
   }
 }
 /*# sourceMappingURL=styles.css.map */
