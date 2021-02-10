@@ -629,6 +629,39 @@ body{
         display:block;
       }
     }
+
+    .menu{
+    .container{
+
+    
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      .menu-content{
+        margin-top: 20px;
+        width: 100%;
+        max-width: 500px;
+        text-align: center;
+        
+
+        h2{
+          font-size: 80px;
+          line-height: 90px;
+        }
+      }
+
+      .img-wrapper{
+        width:100%;
+        max-width: 500px;
+        img{
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
   }
   
   @media(max-width:873px){
