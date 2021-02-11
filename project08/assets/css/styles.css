@@ -14,5 +14,17 @@ body {
   font-size: 16px;
   line-height: 26px;
   -webkit-font-smoothing: antialiased;
+  height: 100vh;
+  background: #1a1a1a;
+}
+
+header .nav-menu .logo {
+  width: 96px;
+  height: 96px;
+}
+
+header .nav-menu .logo img {
+  width: inherit;
+  height: inherit;
 }
 /*# sourceMappingURL=styles.css.map */

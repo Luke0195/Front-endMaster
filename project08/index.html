@@ -1,12 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+  <script src="svg-inject.min.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="assets/css/styles.css"/>
   <title>Spider-Man Miles-Morales</title>
 </head>
 <body>
-    <h1> Teste</h1>
+ 
+    <header>
+      <nav class="navbar">
+        <div class="nav-menu">
+          <div class="logo">
+            <img src="./assets/svg/logo-spiderman.svg" onload="SVGInject(this)" />
+          </div><!--logo-->
+          <ul class="nav-list">
+            <li>
+                <a href="#" class="nav-link">  Home </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">  Story </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">  Wallpapers</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">  Story </a>
+            </li>
+          </ul>
+        </div><!--container-->
+        <div class="nav-social">
+          <div class="img-wrapper" >
+            <img src="assets/svg/icon-facebook.svg" alt="logo do facebook"/>
+          </div><!--img-wrapper-->
+
+          <div class="img-wrapper">
+            <img src="assets/svg/icon-instagram.svg" alt="logo do instagram"/>
+          </div><!--img-wrapper-->
+
+
+          <div class="img-wrapper">
+            <img src="assets/svg/icon-youtube.svg" alt="logo do youtube"/>
+          </div><!--img-wrapper-->
+
+          <div class="img-wrapper">
+            <img src="assets/svg/icon-twitter.svg" alt="logo do twitter"/>
+          </div><!--img-wrapper-->
+
+         
+        </div><!--nav-social-->
+      </nav><!--navbar-->
+    </header>
+
+    <section class="container">
+      <div class="container-item1">
+        <div class="img-wrapper">
+          <img src="assets/img/spiderman-text.png" alt="logo do spider man miles morales"/>
+        </div><!--img-wraper-->
+        <p> Lorem ipsum dolor sit amet, consectetur 
+            adipiscing elit. Cras at tristique enim, 
+            et ultricies dui. Etiam commodo augue arcu,
+            nec congue urna lobortis sit amet. 
+            Nunc dignissim libero odio, euismod faucibus magna vestibulum eget. 
+            Morbi hendrerit libero ac mollis condimentum. </p>
+        <p>
+          <a href="#" target="_blank" class="btn"> Pre-order Now</a>
+          <a href="#" target="_blank" class="btn-secondary"> wact the teaser</a>
+        </p>
+        
+        <p>
+          <div class="img-wrapper-svg">
+            <img src="assets/svg/ps.svg" alt="logo do playstation"/>
+          </div><!--img-wrapper-->
+
+          <div class="img-wrapper-svg">
+            <img src="assets/svg/marvel.svg" alt="logo do marvel"/>
+          </div><!--img-wrapper-->
+        </p>
+
+        
+      </div><!--container-item1-->
+
+
+      <div class="container-item2">
+        <div class="img-wrapper2">
+          <img src="assets/img/spider-man.png" alt="imagem do homem aranha"/>
+        </div>
+      </div><!--container-item1-->
+
+
+    </section>
+
+
+   
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

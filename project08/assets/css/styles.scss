@@ -5,15 +5,29 @@
   box-sizing: border-box;
 }
 
+// svg 32px 32px
 html, body{
   height: 100%;
-  
 }
 
 body{
   font-size: 16px;
   line-height: 26px;
   -webkit-font-smoothing: antialiased;
+  height: 100vh;
+  background:#1a1a1a;
+}
 
+header{
+  .nav-menu{
+    .logo{
+      width: 96px;
+      height: 96px;
+      img{
+        width: inherit;
+        height: inherit;
+      }
+    }
+  }
 }
 
