@@ -922,11 +922,6 @@ body {
 }
 
 @media (max-width: 743px) {
-  .special-food {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   .special-food .imagens {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -938,7 +933,6 @@ body {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
-    margin: auto;
   }
   .special-food .imagens .img-wrapper {
     width: 150px;
