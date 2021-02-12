@@ -1,14 +1,21 @@
+@import 'partials/colors';
+@import 'partials/menu';
+@import 'partials/animations';
+
+
 *{
   padding: 0;
   margin: 0;
   outline: 0;
   box-sizing: border-box;
+  font-family: 'Mukta',Arial, Helvetica, sans-serif;
 }
 
 // svg 32px 32px
 html, body{
   height: 100%;
 }
+
 
 body{
   font-size: 16px;
@@ -18,16 +25,18 @@ body{
   background:#1a1a1a;
 }
 
-header{
-  .nav-menu{
-    .logo{
-      width: 96px;
-      height: 96px;
-      img{
-        width: inherit;
-        height: inherit;
-      }
-    }
-  }
+a{
+  text-decoration: none;
+  color:$white;
 }
 
+.border{
+  border: 1px solid red;
+}
+
+p{
+  font-size: 16px;
+  color:$gray-3;
+  letter-spacing: 1px;
+  line-height: 160%;
+}
