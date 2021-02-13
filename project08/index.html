@@ -10,8 +10,14 @@
   <title>Spider-Man Miles-Morales</title>
 </head>
 <body>
-  
-    <header>
+  <div id="app">
+   <div class="video">
+      <video autoplay loop>
+        <source src="assets/video/spiderman2.mp4" type="video/mp4">
+      </video>
+   </div>
+   <div class="app">
+      <header>
       <nav class="navbar">
         <div class="nav-menu">
           <div class="logo">
@@ -60,18 +66,22 @@
         <div class="img-wrapper">
           <img src="assets/img/spiderman-text.png" alt="logo do spider man miles morales"/>
         </div><!--img-wraper-->
-        <p> Lorem ipsum dolor sit amet, consectetur 
-            adipiscing elit. Cras at tristique enim, 
-            et ultricies dui. Etiam commodo augue arcu,
-            nec congue urna lobortis sit amet. 
-            Nunc dignissim libero odio, euismod faucibus magna vestibulum eget. 
-            Morbi hendrerit libero ac mollis condimentum. </p>
-        <p>
-          <a href="#" target="_blank" class="btn"> Pre-order Now</a>
-          <a href="#" target="_blank" class="btn-secondary"> wact the teaser</a>
-        </p>
-        
-        <p>
+        <div class="content">
+          <p> Lorem ipsum dolor sit amet, consectetur 
+              adipiscing elit. Cras at tristique enim, 
+              et ultricies dui. Etiam commodo augue arcu,
+              nec congue urna lobortis sit amet. 
+              Nunc dignissim libero odio, euismod faucibus magna vestibulum eget. 
+              Morbi hendrerit libero ac mollis condimentum. </p>
+          <p class="links">
+            <a href="#" target="_blank" class="btn"> Pre-order Now</a>
+            <a href="#" target="_blank" class="btn-secondary"> Watch the teaser</a>
+          </p>
+          
+          <p>
+
+        </div>
+        <div class="icons">
           <div class="img-wrapper-svg">
             <img src="assets/svg/ps.svg" alt="logo do playstation"/>
           </div><!--img-wrapper-->
@@ -80,6 +90,7 @@
             <img src="assets/svg/marvel.svg" alt="logo do marvel"/>
           </div><!--img-wrapper-->
         </p>
+      </div>
 
         
       </div><!--container-item1-->
@@ -93,7 +104,8 @@
 
 
     </section>
-
+  </div><!--app-->
+  </div><!--app-->
 
    
     <script src="assets/js/script.js"></script>

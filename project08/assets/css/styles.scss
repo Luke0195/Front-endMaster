@@ -1,6 +1,7 @@
 @import 'partials/colors';
 @import 'partials/menu';
 @import 'partials/animations';
+@import 'partials/layout';
 
 
 *{
@@ -22,7 +23,7 @@ body{
   line-height: 26px;
   -webkit-font-smoothing: antialiased;
   height: 100vh;
-  background:#1a1a1a;
+  overflow: hidden;
 }
 
 a{
@@ -39,4 +40,32 @@ p{
   color:$gray-3;
   letter-spacing: 1px;
   line-height: 160%;
+}
+
+.video{
+  
+  width: 100vw;
+  height: 100vh;
+  filter: brightness(20%);
+  
+  
+}
+
+#app{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  position: relative;
+  margin: 0 auto;
+  
+
+}
+
+.app{
+  position:absolute;
+  left: 50%;
+  transform: translatex(-2%)
+
+  
 }
