@@ -253,6 +253,7 @@ header .header-content h1 {
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+  position: relative;
 }
 
 .section-grid .grid-item {
@@ -280,5 +281,93 @@ header .header-content h1 {
   color: #fff;
   padding-left: 20px;
   text-transform: uppercase;
+}
+
+footer {
+  width: 100%;
+  background: #1a1a1d;
+  padding: 40px;
+}
+
+footer .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+footer .container-footer-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .container-footer-header-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .container-footer-header-icons .icon {
+  margin: 0 8px;
+  -webkit-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out;
+  cursor: pointer;
+}
+
+footer .container-footer-header-icons .icon:hover {
+  -webkit-transform: translate3d(0, -8px, 0);
+          transform: translate3d(0, -8px, 0);
+}
+
+footer .container-footer {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .container-footer p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+  font-weight: 600;
+}
+
+footer .container-footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+footer .container-footer ul li {
+  margin: 0 10px;
+}
+
+footer .container-footer ul a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  padding-bottom: 6px;
+}
+
+footer .container-footer ul a:hover {
+  border-bottom: 2px solid #fff;
 }
 /*# sourceMappingURL=styles.css.map */
